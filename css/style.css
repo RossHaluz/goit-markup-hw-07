@@ -52,6 +52,13 @@ img {
 }
 
 /* Базові класи */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: currentColor; /* Наслідує колір */
+}
 .section-title {
   margin-top: 0;
   font-weight: 700;
@@ -117,28 +124,31 @@ img {
   color: var(--main-text-color);
 }
 
-.main-links {
+.nav__list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--main-text-color);
 }
 
-.main-links .iteam:not(:last-child) {
+.nav__iteam:not(:last-child) {
   margin-right: 50px;
 }
-.main-links .iteam .main-header-link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--transition);
 }
-
-.main-header-link.header-link-current {
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--hover-text-color);
+}
+.nav__link--current {
   position: relative;
   color: var(--hover-text-color);
 }
-.header-link-current::after {
+.nav__link--current::after {
   content: "";
   display: block;
   position: absolute;
@@ -149,41 +159,32 @@ img {
   width: 100%;
   height: 4px;
 }
-.main-links .main-header-link:hover,
-.main-links .main-header-link:focus {
-  color: var(--hover-text-color);
-}
+
+/* Contacts-header  */
 .contacts-header {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.contacts-item {
+.contacts-header__item {
   margin-right: 50px;
 }
-.contacts-item:last-child {
+.contacts-header__item:last-child {
   margin-right: 0;
 }
-.contact-link {
+.contacts-header__link {
   padding: 32px 0;
   display: inline-flex;
   align-items: center;
   transition: color var(--transition);
 }
-.contact-link:hover,
-.contact-link:focus {
+.contacts-header__link:hover,
+.contacts-header__link:focus {
   color: var(--hover-text-color);
 }
-.contact-icon {
+.contacts-header__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-  color: currentColor; /* Наслідує колір */
 }
 
 /* Hero */
