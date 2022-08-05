@@ -16,7 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
   <body data-page>
@@ -191,7 +192,7 @@
                 height="260"
                 class="team__img"
               />
-              <div class="taem__wrapper">
+              <div class="team__wrapper">
                 <h3 class="team__person">Игорь Демьяненко</h3>
                 <p lang="en" class="team__desc">Product Designer</p>
                 <ul class="soicial-list list">
@@ -250,7 +251,7 @@
                 height="260"
                 class="team__img"
               />
-              <div class="taem__wrapper">
+              <div class="team__wrapper">
                 <h3 class="team__person">Ольга Репина</h3>
                 <p lang="en" class="team__desc">Frontend Developer</p>
                 <ul class="soicial-list list">
@@ -309,7 +310,7 @@
                 height="260"
                 class="team__img"
               />
-              <div class="taem__wrapper">
+              <div class="team__wrapper">
                 <h3 class="team__person">Николай Тарасов</h3>
                 <p lang="en" class="team__desc">Marketing</p>
                 <ul class="soicial-list list">
@@ -368,7 +369,7 @@
                 height="260"
                 class="team__img"
               />
-              <div class="taem__wrapper">
+              <div class="team__wrapper">
                 <h3 class="team__person">Михаил Ермаков</h3>
                 <p lang="en" class="team__desc">UI Designer</p>
                 <ul class="soicial-list list">
@@ -565,60 +566,60 @@
     <!-- Backdrop modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="modal-form">
-          <strong class="modal-title"
+        <form class="modal__form">
+          <strong class="modal__title"
             >Залиште свої дані, ми вам передзвонимо</strong
           >
 
-          <div class="form-wrap" role="group">
-            <label class="modal-label">
-              <span class="modal-name">Ім'я</span>
-              <span class="modal-position-icon">
+          <div class="modal__wrap" role="group">
+            <label class="modal__label">
+              <span class="modal__name">Ім'я</span>
+              <span class="modal__position-icon">
                 <input
                   type="text"
                   name="user-name"
-                  class="modal-input"
+                  class="modal__input"
                   required
                 />
-                <svg class="modal-icon">
+                <svg class="modal__icon">
                   <use href="./image/icons.svg#person-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="modal-label">
-              <span class="modal-name">Телефон</span>
-              <span class="modal-position-icon">
+            <label class="modal__label">
+              <span class="modal__name">Телефон</span>
+              <span class="modal__position-icon">
                 <input
                   type="tel"
                   name="user-tel"
-                  class="modal-input"
+                  class="modal__input"
                   required
                 />
-                <svg class="modal-icon">
+                <svg class="modal__icon">
                   <use href="./image/icons.svg#phone-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="modal-label">
-              <span class="modal-name">Пошта</span>
-              <span class="modal-position-icon">
+            <label class="modal__label">
+              <span class="modal__name">Пошта</span>
+              <span class="modal__position-icon">
                 <input
                   type="email"
                   name="user-mail"
-                  class="modal-input"
+                  class="modal__input"
                   required
                 />
-                <svg class="modal-icon">
+                <svg class="modal__icon">
                   <use href="./image/icons.svg#email-black"></use>
                 </svg>
               </span>
             </label>
-            <label class="modal-label">
-              <span class="modal-name">Коментар</span>
+            <label class="modal__label">
+              <span class="modal__name">Коментар</span>
               <textarea
-                name="modal-comment"
+                name="modal__comment"
                 placeholder="Введіть текст"
-                class="modal-comment"
+                class="modal__comment"
               ></textarea>
             </label>
           </div>
@@ -628,27 +629,27 @@
               type="checkbox"
               name="primes"
               value="primes"
-              class="primes-checkbox visually-hidden"
+              class="primes__checkbox visually-hidden"
             />
-            <svg class="primes-icons" width="16" height="15">
+            <svg class="primes__icons" width="16" height="15">
               <use
                 href="./image/icons.svg#primes_unchecked"
-                class="primes-unchecked"
+                class="primes__icon-unchecked"
               ></use>
               <use
                 href="./image/icons.svg#primes_check"
-                class="icon-check"
+                class="primes__icon-check"
               ></use>
             </svg>
-            <span class="primes-text">
+            <span class="primes__text">
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="primes-link link">Умови договору</a>
+              <a href="" class="primes__link link">Умови договору</a>
             </span>
           </label>
-          <button type="submit" class="btn">Відправити</button>
+          <button type="submit" class="btn modal__btn">Відправити</button>
         </form>
-        <button class="btr-xmart" data-modal-close>
-          <svg class="icon-xmark" width="10" height="10">
+        <button class="modal__button-close" data-modal-close>
+          <svg class="modal-close__icon" width="10" height="10">
             <use href="./image/icons.svg#icon-xmark"></use>
           </svg>
         </button>
